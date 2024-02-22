@@ -1,0 +1,62 @@
+@media (max-width: 1878px) and (min-width: 760px) {
+
+    .header__name{
+        font-family: monospace;
+        position: relative;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-align: center;
+        width: 770px;
+        height: 90px;
+        left: 40%;
+        top: 43%;
+        transform: translate(-50%,-50%);
+        color: rgb(255, 255, 255);
+    }
+    
+    .newcontrol{
+        position: relative;
+        top: -50px;
+        left: 350px;
+        width: 35px;
+        height: 35px;
+        background-image: url(../pictures/delete.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    h1{
+        font-family: monospace;
+        background-color: rgb(35, 63, 110);
+        font-size: 2rem;
+    }
+    
+    .contenedor {
+        max-width: 90%;
+        width: 400px;
+        margin: 10px auto;
+    }
+
+    .formulario input{
+        padding: 20px;
+        border: none;
+        background: rgb(255, 255, 255);
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        font-size: 2.5em;
+        margin-bottom: -18px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        color: rgb(35, 63, 110);
+        text-align: center;
+    }
+
+    .contenedorQR {
+        display: flex;
+        justify-content: center;
+        padding: 14px 0;
+    }
+
+      }

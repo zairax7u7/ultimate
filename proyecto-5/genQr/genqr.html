@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ITSSNP GENERADOR QR</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./genqr.css" />
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+		<script defer src="./genqr.js"></script>
+		<link rel="stylesheet" href="../responsive/1366x768_2.css">
+		<link rel="stylesheet" href="../responsive/1920x1080_2.css">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__logo" id="logg"></div>
+			<div class="header__name">
+				<h1>INSTITUTO TECNOLÓGICO SUPERIOR DE LA SIERRA NORTE DE PUEBLA</h1>
+			</div>
+			<div class="header__date">
+				<div class="date__date"><p class="date__date__p" id="hour_now"></p></div>
+				<div class="date__day">
+					<div class="day__day"><p class="date__day__p" id="date_day"></p></div>
+					<div class="day__Month"><p class="day__Month_p" id="date_month"></p><p class="day__Month_p-p" id="number_day"></p></div>
+				</div>
+			</div>
+		</header>
+		<div class="contenedor">
+			<form action="" id="formulario" class="formulario">
+				<input type="number" oninput="limitarLongitud(this, 8)" id="link" placeholder="Número de control">
+				<div id="newnum" class="newcontrol buttonQR-display"></div>
+				<button class="btn buttonQR-display" id="buttonInput">Generar QR</button>
+			</form>
+			<div id="contenedorQR" class="contenedorQR">
+
+			</div>
+			<button type="button" class="buttonQR buttonQR-display" id="qrbutton">DESCARGAR</button>
+		</div>
+		<script src="../index/time.js"></script>
+		<script src="./qrprueba.js"></script>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../responsive/1366x768.css">
+    <link rel="stylesheet" href="../responsive/1920x1080.css">
+    <title>ITSSNP PORTAL</title>
+</head> 
+<body>
+    <header class="header">
+        <div class="header__logo" id="logo"></div>
+        <div class="header__name">
+            <h1>INSTITUTO TECNOLÓGICO SUPERIOR DE LA SIERRA NORTE DE PUEBLA</h1>
+        </div>
+        <div class="header__date">
+            <div class="date__date"><p class="date__date__p" id="hour_now"></p></div>
+            <div class="date__day">
+                <div class="day__day"><p class="date__day__p" id="date_day"></p></div>
+                <div class="day__Month"><p class="day__Month_p" id="date_month"></p><p class="day__Month_p-p" id="number_day"></p></div>
+            </div>
+        </div>
+    </header>
+    <!-- </header> -->
+    <main class="main">
+        <div class="cont">
+            <div class="cont__Qr"><input class="Qr__inpt" id="Qr__bardata" type="number" oninput="limitarLongitud(this, 8)"></div>
+            <!--<button class="cont__button">ESCANEAR</button>-->
+            <!-- <div class="restriict" id="restt">¡¡ACCESO DENEGADO!!</div> -->
+        </div>
+    </main>
+    <script src="./index.js"></script>
+    <script src="./time.js"></script>
+</body>
+</html>
